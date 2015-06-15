@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+ <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div>
+        <div class="row-md-2">
+            <div class="list-group">
+               <form action ="/home/check" method="post" >
+                    <div class="bs-docs-header" id="content" style="background-color:black; color:white; padding-top:1px; 
+                    padding-bottom:1px;" tabindex="-1"> <h4>LOG IN</h4></div><br />
+                    <label for="UserName">User</label><br />/
+                    <input type="text" class="form-control" name="Name" placeholder="Enter ID"/><br />
+                    <label for="password">password</label><br />
+                    <input type="password" class="form-control" name="Pass" placeholder="Password"/><br />                   
+                 
+                    <div class='column' role="radiogroup" >
+                        <input type='radio' id='at' name='ch' value='a' >
+                    <label for='admin'>Admin</label>
+                        <input type='radio' id='ur' name='ch' value='u' style="visibility:visible; -moz-appearance:radio">
+                    <label for='user'>User</label>
+	              </div>
+                    <button type="submit" class="btn btn-default" style="background-color:black; color:white; 
+                    padding-top:1px; padding-bottom:1px;">Log In</button>
+                 
+                
+                </form>
+            </div>
+        </div> 
+                
+            <!--End forms-->
+        </div>
+
+
+   
+</body>
+</html>
+        
+
+
+
+
+
+
+
+
+
+
+  
+  
+   

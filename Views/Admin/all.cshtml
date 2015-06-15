@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "all";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+@using Project112.Models;
+<head>
+   
+    <title></title>
+   <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+
+</head>
+<body>
+    <br />
+    <br />
+    <br />
+    <table border="1">
+       @{
+           Database1Entities9 d=new Database1Entities9();
+           List<Transection> l=d.Transections.ToList<Transection>();
+           <tr>
+               <td>
+                       UserId
+                   </td>
+                   <td>
+                       Transaction
+                   </td>
+                   <td>
+                       Amount
+                   </td>
+                   <td>
+                      Date
+                   </td>
+               </tr>
+           foreach(Transection t in l)
+           {
+               <tr>
+                   <td>
+                       @t.Uid
+                   </td>
+                   <td>
+                       @t.Trans
+                   </td>
+                   <td>
+                       @t.Amounted
+                   </td>
+                   <td>
+                       @t.date
+                   </td>
+               </tr>
+           }
+           }
+    </table>
+</body>
+

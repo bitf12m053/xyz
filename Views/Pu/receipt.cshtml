@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "receipt";
+    Layout = "~/Views/Shared/PuS.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <title></title>
+   <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+
+</head>
+<body>
+               <br />
+
+            <div class="form-group" style="width:40% ">
+                <label for="Receipt"> Receipt*</label>
+             
+            <br />
+                <br />
+                <br />
+                <br />
+
+               
+                 Your Old AMount Is:<b> @ViewBag.oa</b>
+                <br />
+                <br />
+           
+                 Your New AMount Is:<b> @ViewBag.ua </b>    
+                 </div>
+                
+              <button type="submit" class="btn btn-primary"> OK</button> 
+        
+       <!--End forms-->
+
+         
+
+    
+
+</body>
+</html>
+

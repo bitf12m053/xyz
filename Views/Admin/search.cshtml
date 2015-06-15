@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "search";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   
+    <title></title>
+   <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+
+</head>
+<body>
+    
+
+             <!---------------FastCash---------------->
+    <h2 class="page-header">Enter User Id you want to See Transactions...</h2>
+    <div>
+        <!----forms-->
+       <form action="/Admin/searched" method="post">
+
+                <label for="Amount"> UserId*</label>
+                <input type="text" class="form-control" placeholder="Enter UserId" name="uid" />
+
+                   
+
+                
+                    <button type="submit" class="btn btn-default" style="background-color:black; color:white; padding-top:1px; padding-bottom:1px;">
+                </button>
+              <button type="submit" class="btn btn-primary"> Submit</button> 
+              </form>
+
+            </div>
+         
+             
+     
+        
+         
+        
+
+</body>
+</html>

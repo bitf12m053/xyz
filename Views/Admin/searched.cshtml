@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "searched";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+@using Project112.Models;
+<head>
+   
+    <title></title>
+   <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+
+</head>
+<body>
+    <br />
+    <br />
+    <br />
+    <table border="1">
+       @{
+           <tr>
+               <td>
+                       UserId You searched
+                   </td>
+                   <td>
+                       Transaction
+                   </td>
+                   <td>
+                       Amount
+                   </td>
+                   <td>
+                      Date
+                   </td>
+               </tr>
+           foreach(Transection t in Model)
+           {
+               <tr>
+                   <td>
+                       @t.Uid
+                   </td>
+                   <td>
+                       @t.Trans
+                   </td>
+                   <td>
+                       @t.Amounted
+                   </td>
+                   <td>
+                       @t.date
+                   </td>
+               </tr>
+           }
+           }
+    </table>
+</body>

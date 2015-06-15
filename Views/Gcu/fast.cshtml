@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "fast";
+    Layout = "~/Views/Shared/GcuS.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   
+    <title></title>
+   <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+
+</head>
+<body>
+
+             <!---------------FastCash---------------->
+    <h2 class="page-header">Enter amount you want to add...</h2>
+    <div>
+        <!----forms-->
+       <form action="/Gcu/added" method="post">
+
+                <label for="Amount"> Amount*</label>
+                <input type="text" class="form-control" placeholder="Enter Your AMOUNT" name="amount" />
+
+                   
+
+                
+                    <button type="submit" class="btn btn-default" style="background-color:black; color:white; padding-top:1px; padding-bottom:1px;">
+                </button>
+              <button type="submit" class="btn btn-primary"> Submit</button> 
+              </form>
+
+            </div>
+             
+     
+        
+         
+        
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Atm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+    <head>
+        <title></title>
+         <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.js"></script>
+    </head>
+    <body>
+        <br />
+        <br /><br />
+        <form method="post" action="/home/redirect">
+            Select Atm U want to Use:
+        <div class='column' role="radiogroup" >
+                        <input type='radio' id='st' name='ch' value='g' />
+                    <label for='student'>Gcu Atm</label>
+                        <input type='radio' id='tr' name='ch' value='p' style="visibility:visible; -moz-appearance:radio"/>
+                    <label for='teacher'>Pu Atm</label>
+        </div>
+            <input type="submit" value="Enter" />
+            </form>
+    </body>
+</html>
